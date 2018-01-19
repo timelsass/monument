@@ -248,6 +248,11 @@ function boldgrid_filter_logo_controls( $controls ) {
 	$controls['logo_margin_top']['default'] = 5;
 	$controls['logo_text_transform']['default'] = 'none';
 	$controls['logo_text_decoration_hover']['default'] = 'none';
+	$controls['logo_line_height']['output'][] = array(
+		'element'  => '.palette-primary h1.site-title',
+		'property' => 'line-height',
+		'units'    => '%',
+	);
 
 	// Controls above will override framework defaults.
 	return $controls;
